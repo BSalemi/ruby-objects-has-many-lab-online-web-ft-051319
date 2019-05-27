@@ -11,12 +11,8 @@ class Post
    @@all
  end
 
-def author_name
-  if self.author.name == nil
-    return nil
-  else
-    self.author.name
-  end
-end
+ def author_name
+     self.author ? self.author.name : nil
+   end
 
 end
